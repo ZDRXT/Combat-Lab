@@ -1,0 +1,265 @@
+body{
+    padding: 50px;
+    background: url(../../images/backgrounds/game-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .player-inf{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+header .player-inf .health-bar{
+    width: 350px;
+    height: 32px;
+    background-color: rgb(138, 90, 90);
+    background: url(../../images/tools/Group\ 14.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5px;
+    position: relative;
+    left: 60px;
+}
+
+header .player-inf .energy-bar{
+    width: 350px;
+    height: 32px;
+    background-color: rgb(138, 90, 90);
+    background: url(../../images/tools/Group\ 14.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5px;
+    position: relative;
+    left: 60px;
+}
+
+header .player-inf .health-bar-progress{
+    height: 100%;
+    background-color: red;
+}
+
+header .player-inf .energy-bar-progress{
+    height: 100%;
+    background-color: yellow;
+}
+
+header .player-inf .tools{
+    display: flex;
+    gap: 20px;
+}
+
+header .player-inf .tools .tool{
+    cursor: pointer;
+    height: 90px;
+    width: 90px;
+    background: url(../../images/backgrounds/weapon-card.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    transition: all 0.2s;
+}
+
+header .player-inf .tools .tool:hover{
+    transform: scale(1.05);
+    filter: brightness(0.85);
+}
+
+header .player-inf .tools .tool img{
+    width: 55%;
+    height: 55%;
+}
+
+header .boss-inf .health-bar{
+    position: relative;
+    right: 60px;
+    width: 350px;
+    height: 32px;
+    background-color: rgb(138, 90, 90);
+    background: url(../../images/tools/Group\ 14.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5px;
+}
+
+header .boss-inf .health-bar-progress{
+    height: 100%;
+    background-color: red;
+}
+
+header .boss-inf .health-bar::after{
+    content: "";
+    width: 40px;
+    height: 32px;
+    display: block;
+    background: url(/images/tools/health.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: -60px;
+}
+
+header .player-inf .health-bar::after{
+    content: "";
+    width: 40px;
+    height: 32px;
+    display: block;
+    background: url(/images/tools/health.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: -60px;
+}
+
+
+header .player-inf .energy-bar::after{
+    content: "";
+    width: 40px;
+    height: 32px;
+    display: block;
+    background: url(/images/tools/energy.png );
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: -60px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    position: absolute;
+    width: 100%;
+    bottom: 25vh;
+    left: 0;
+}
+
+main .boss, main .player{
+    height: 40vh;
+    width: calc(40vh * 0.72);
+}
+
+main img{
+    height: 100%;
+    width: 100%;
+}
+
+footer{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+}
+
+footer .weapons{
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+footer .weapon{
+    margin: 0 15px;
+    cursor: pointer;
+    height: 120px;
+    width: 120px;
+    background: url(../../images/backgrounds/weapon-card.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    transition: all 0.2s;
+}
+
+footer .weapon:hover{
+    transform: scale(1.05);
+    filter: brightness(0.85);
+}
+
+footer .weapon img{
+    width: 75%;
+    height: 75%;
+}
+
+button:disabled{
+	opacity: 0.4;
+}
+
+main .windows .window{
+    width: 20vh;
+    height: 10vh;
+    background: url(/images/windows/window.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .windows .lose-window{
+    display: none;
+}
+
+main .windows{
+    display: none;
+}
+
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    background: rgba(0, 0, 0, 0.44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    transition: all 0.3s;
+    z-index: 1;
+    opacity: 1;
+}
+
+.modal .row{
+    display: flex;
+}
+
+.modal-window{
+    background-color: black;
+    width: 800px;
+    padding: 30px;
+    position: relative;
+}
+
+.modal-window-boss{
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.modal-window-boss img{
+    width: 240px;
+}
+
+.modal h2{
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.modal-window-nav{
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+
+.modal-window-nav button{
+    padding: 15px 25px;
+}
+
+.modal.hide{
+    z-index: -1;
+    opacity: 0;
+}

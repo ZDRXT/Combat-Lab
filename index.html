@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./src/styles/home.css">
+	<title>Combat Lab</title>
+</head>
+
+<body>
+	<h1>Combat Lab</h1>
+
+	<nav>
+		<button class="new-game-button"><img src="/images/buttons/image 3.png"> NEW GAME <img
+			src="/images/buttons/image 4.png"></button>
+		<button class="start-button"><img src="/images/buttons/image 3.png"> CONTINUE <img
+			src="/images/buttons/image 4.png"></button>
+		<button class="options-button"><img src="/images/buttons/image 5.png"> OPTIONS <img
+			src="/images/buttons/image 5.png"></button>
+		<button class="credits-button"><img src="/images/buttons/image 6.png"> CREDITS <img
+			src="/images/buttons/image 7.png"></button>
+	</nav>
+
+	<div class="modal">
+		<div class="options">
+			<h2>OPTIONS</h2>
+
+			<div class="options-controls">
+				<div class="difficulty">
+					<h3>DIFFICULTY</h3>
+
+					<select id="difficulties">
+						<option value="EASY" selected>EASY</option>
+						<option value="MEDIUM">MEDIUM</option>
+						<option value="HARD">HARD</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+		<div class="credits">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ea voluptas voluptates sapiente pariatur vero,
+				incidunt quis, obcaecati provident sequi, sit debitis repellendus magni? Nesciunt nemo pariatur ipsa rem
+				tempora, perspiciatis molestiae aspernatur cum a eveniet! Incidunt aspernatur molestias neque accusantium,
+				eveniet corporis voluptatum et voluptas. Mollitia maiores pariatur nihil.</p>
+		</div>
+	</div>
+	
+	<audio controls src="./musics/menu.mp3" class="audio"></audio>
+	
+	<button class="volume"></button>
+
+	<script src="./src/scripts/home.js"></script>
+	<script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+{
+	"totalBosses": 8,
+	"bossesList": [
+		{
+			"id": 1,
+			"name": "Police",
+			"hp": 1000,
+			"img": "../../images/bosses/boss1.png",
+			"damage": 5
+		},
+		{
+			"id": 2,
+			"name": "Police",
+			"hp": 1500,
+			"img": "../../images/bosses/boss2.png",
+			"damage": 7
+		},
+		{
+			"id": 3,
+			"name": "Police",
+			"hp": 2250,
+			"img": "../../images/bosses/boss1.png",
+			"damage": 9
+		},
+		{
+			"id": 4,
+			"name": "Police",
+			"hp": 3000,
+			"img": "../../images/bosses/boss1.png",
+			"damage": 10
+		},
+		{
+			"id": 5,
+			"name": "Police",
+			"hp": 3750,
+			"img": "../../images/bosses/boss1.png",
+			"damage": 13
+		},
+		{
+			"id": 6,
+			"name": "Police",
+			"hp": 4500,
+			"img": "../../images/bosses/boss1.png",
+			"damage": 16
+		},
+		{
+			"id": 7,
+			"name": "Police",
+			"hp": 5500,
+			"img": "../../images/bosses/boss1.png",
+			"damage": 19
+		},
+		{
+			"id": 8,
+			"name": "Police",
+			"hp": 7500,
+			"img": "../../images/bosses/boss2.png",
+			"damage": 24
+		}
+	]
+}

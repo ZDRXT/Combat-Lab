@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../styles/game.css">
+	<link rel="stylesheet" href="../../style.css">
+	<title>Combat Lab Game</title>
+</head>
+
+<body>
+	<header>
+		<div class="player-inf">
+			<div class="health-bar">
+
+
+				<div class="health-bar-progress">
+
+				</div>
+			</div>
+
+			<div class="energy-bar">
+
+
+				<div class="energy-bar-progress">
+
+				</div>
+			</div>
+
+			<div class="tools">
+				<button class="tool-1 tool" data-option="syringe"><img src="../../images/tools/syringe.png"></button>
+
+				<button class="tool-2 tool" data-option="bandage"><img src="../../images/tools/bandage.png"></button>
+
+				<button class="tool-3 tool" data-option="aid-kit"><img src="../../images/tools/aid-kit.png"></button>
+			</div>
+		</div>
+
+		<div class="timer">
+			0
+		</div>
+
+		<div class="boss-inf">
+			<div class="health-bar">
+
+
+				<div class="health-bar-progress">
+
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="player">
+			<img src="../../images/bosses/Player.png">
+		</div>
+
+		<div class="boss">
+			<img src="../../images/bosses/Boss1.png">
+		</div>
+
+	</main>
+
+	<footer>
+		<div class="weapons">
+			<button class="weapon weapon-1" data-damage="1">
+				<img src="../../images/weapons/weapon1.png" alt="">
+			</button>
+
+			<button class="weapon weapon-2" data-damage="2">
+				<img src="../../images/weapons/weapon2.png" alt="">
+			</button>
+
+			<button class="weapon weapon-3" data-damage="3">
+				<img src="../../images/weapons/weapon3.png" alt="">
+			</button>
+
+			<button class="weapon weapon-4" data-damage="5">
+				<img src="../../images/weapons/weapon4.png" alt="">
+			</button>
+
+			<button class="weapon weapon-5" data-damage="8">
+				<img src="../../images/weapons/weapon5.png" alt="">
+			</button>
+
+			<button class="weapon weapon-6" data-damage="10">
+				<img src="../../images/weapons/weapon6.png" alt="">
+			</button>
+
+			<button class="weapon weapon-7" data-damage="12">
+				<img src="../../images/weapons/weapon7.png" alt="">
+			</button>
+
+			<button class="weapon weapon-8" data-damage="15">
+				<img src="../../images/weapons/weapon8.png" alt="">
+			</button>
+		</div>
+	</footer>
+
+	<div class="modal hide">
+		<div class="modal-window">
+			<h2>You Win!</h2>
+
+			<div class="modal-window-boss row">
+				<img src="../../images/bosses/Boss1.png">
+
+				<div class="boss-stats">
+					<h3 class="boss-stats-name">Name: <span></span></h3>
+					<p class="boss-stats-hp">HP: <span></span></p>
+					<p class="boss-stats-damage">Dealed damage <span></span></p>
+					<p class="boss-stats-time">Time: <span></span></p>
+				</div>
+			</div>
+
+			<div class="modal-window-nav row">
+				<button class="modal-window-again">Fight again</button>
+				<button class="modal-window-menu">Boss menu</button>
+				<button class="modal-window-next">Next boss</button>
+			</div>
+		</div>
+	</div>
+	
+	<audio controls src="../../musics/game.mp3" class="audio"></audio>
+	
+	<button class="volume"></button>
+
+	<script src="../scripts/game.js"></script>
+	<script src="../../script.js"></script>
+</body>
+
+</html>

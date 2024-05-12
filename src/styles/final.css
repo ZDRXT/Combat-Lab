@@ -1,0 +1,50 @@
+body{
+    background: rgba(0, 0, 0, 0.44);
+}
+
+.root h1{
+    text-align: center;
+    width: 25vh;
+    margin: 7vh auto 5vh auto;
+}
+
+.root .button{
+    display: block;
+    width: 420px;
+    height: 60px;
+    align-items: center;
+    background: url(../../images/backgrounds/Start-button.png);
+    background-size: cover;
+    margin: 0 auto;
+    cursor: pointer;
+    text-align: center;
+    line-height: 2.4;
+    font-size: x-large;
+    text-decoration: none;
+    color: black;
+}
+
+table{
+    margin: 0 auto;
+    margin-bottom: 10vh;
+}
+
+table caption{
+    font-size: 4vh;
+    padding: 4vh 0;
+}
+
+table .head{
+    width: 10vh;
+}
+
+table td, table th{
+    width: 15vh;
+    height: 8vh;
+    text-align: center;
+    font-size: x-large;
+}
+
+tbody img{
+    height: 8vh;
+}
